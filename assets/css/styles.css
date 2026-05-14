@@ -1,11 +1,8 @@
 :root {
-    /* Paleta de Colores */
+    /* Colores personalizados principales */
     --color-principal: #012443;
-    /* Azul oscuro */
     --color-secundario: #F3F3F3;
-    /* Gris claro / Blanco */
     --colorboton: #B61919;
-    /* Rojo */
     --color-texto-claro: #FFFFFF;
     --color-texto-oscuro: #333333;
     --color-gris-fondo: #6E6E6E;
@@ -61,13 +58,6 @@ p {
 }
 
 /* --- Clases Utilitarias --- */
-.container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
 .padding-sm {
     padding-top: 20px;
@@ -121,7 +111,8 @@ p {
 
 /* --- Header y Navegacion --- */
 .header {
-    background-color: var(--color-principal);
+    background-color: rgba(1, 36, 67, 0.95);
+    backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     width: 100%;
@@ -133,6 +124,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 .nav-logo {
@@ -141,28 +133,33 @@ p {
 
 .nav-menu {
     display: flex;
+    align-items: center;
     list-style-type: none;
+    gap: 0.5rem;
 }
 
 .nav-menu-link {
     color: var(--color-texto-claro);
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 0.75rem 1rem;
     display: block;
     text-transform: uppercase;
     font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    border-radius: 0.5rem;
 }
 
 .nav-menu-link:hover {
-    background-color: var(--colorboton);
+    background-color: rgba(182, 25, 25, 0.95);
     color: var(--color-texto-claro);
+    transform: translateY(-1px);
 }
 
 /* Estilo para resaltar la página activa */
 .nav-menu-link.active {
-    background-color: var(--colorboton);
+    background-color: rgba(182, 25, 25, 0.95);
     color: var(--color-texto-claro);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.16);
 }
 
 /* --- Secciones --- */
@@ -194,6 +191,12 @@ p {
     object-fit: cover;
     margin: 0 auto 20px auto;
     border: 5px solid var(--color-principal);
+}
+
+.testimonio-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 /* --- Videos --- */
@@ -241,21 +244,17 @@ p {
 
 /* --- Formulario y Botones --- */
 
-.btn {
-    width: 100%;
+/* Se usa solo btn-modal para no sobrescribir el comportamiento de Bootstrap */
+.btn-modal {
     background-color: var(--colorboton);
-    color: var(--color-texto-claro);
-    border: none;
-    padding: 15px 30px;
-    cursor: pointer;
-    font-size: 1.1rem;
+    color: white;
+    padding: 10px 30px;
     font-weight: bold;
-    text-transform: uppercase;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.btn-modal:hover {
     background-color: #c94f4f;
 }
 
@@ -269,12 +268,6 @@ p {
     font-size: 1.8rem;
 }
 
-.btn-modal {
-    background-color: var(--colorboton);
-    color: white;
-    padding: 10px 30px;
-}
-
 /* --- Carousel --- */
 
 .card-img-top {
@@ -284,16 +277,30 @@ p {
     /* Recorta la imagen para llenar el espacio sin estirar*/
 }
 
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.card:hover .card-body {
+    transform: translateY(-3px);
+}
+
+.carousel-item img {
+    filter: brightness(0.97);
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
 
 /* --- Footer --- */
 .footer {
     background-color: #1a1a1a;
     color: var(--color-texto-claro);
     text-align: center;
-}
-
-.col {
-    padding: 15px;
 }
 
 /* --- Boton Hamburguesa --- */

@@ -20,7 +20,7 @@
 </head>
 
 <body>
-
+    <!-- Barra de info de contacto + modal de contacto -->
     <div class="top-bar">
         <div class="container">
             <div class="contact-info">
@@ -33,12 +33,13 @@
                 <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <div>
-                <button class="btn" data-bs-toggle="modal" data-bs-target="#modalCotizacion">¡Cotiza ahora!</button>
+                <button class="btn btn-modal" data-bs-toggle="modal" data-bs-target="#modalCotizacion">¡Cotiza
+                    ahora!</button>
             </div>
         </div>
     </div>
-
-    <header class="header padding-sm">
+    <!-- Barra de navegación + menú responsive -->
+    <header class="header py-3">
         <div class="container">
             <nav class="nav-bar">
                 <div class="nav-logo">
@@ -73,16 +74,17 @@
     </header>
 
     <main>
+        <!-- Slider principal -->
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img/Banner.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/Banner.jpg" class="d-block w-100" alt="primer banner de la constructora">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/Banner-2.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/Banner-2.jpg" class="d-block w-100" alt="segundo banner de la constructora">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/Banner-3.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/Banner-3.jpg" class="d-block w-100" alt="tercer banner de la constructora">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -97,7 +99,7 @@
             </button>
         </div>
 
-        <section class="about padding-xl">
+        <section class="about py-5">
             <div class="container">
                 <h2>¿Quiénes somos?</h2>
                 <p>Somos una constructora líder con más de 10 años de experiencia, especializada en viviendas
@@ -106,87 +108,117 @@
             </div>
         </section>
 
-        <section class="service padding-xl">
+        <section class="service py-5">
+            <h2>Servicios</h2>
             <div class="container">
-                <h2>Servicios</h2>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img src="assets/img/Servicio-1.png" alt="" class="card-img-top">
-                                <div class="card-body">
-                                    <h5 class="card-title">Servicios Inmobiliarios</h5>
-                                    <p class="card-text">Ofrecemos asesoría integral en servicios inmobiliarios, incluyendo compra, venta, alquiler y gestión de propiedades para satisfacer tus necesidades residenciales o comerciales.</p>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#modalCasaMultisegura">Más Información</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img src="assets/img/Servicio-2.jpg" alt="" class="card-img-top">
-                                <div class="card-body">
-                                    <h5 class="card-title">Construcción, Diseño y Remodelación</h5>
-                                    <p class="card-text">Brindamos servicios completos de construcción desde cero, diseño arquitectónico personalizado y remodelación integral para transformar tu espacio en el hogar ideal.</p>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#modalCasaInteligente">Más Información</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img src="assets/img/Servicio-3.jpg" alt="" class="card-img-top">
-                                <div class="card-body">
-                                    <h5 class="card-title">Inspección y Calidad de la Vivienda</h5>
-                                    <p class="card-text">Realizamos inspecciones de viviendas y garantizamos la calidad en cada proyecto, asegurando estándares, cumplimiento normativo y durabilidad.</p>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#modalPlaneacion">Más Información</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img src="assets/img/Servicio-4.jpg" alt="" class="card-img-top"> 
-                                <div class="card-body">
-                                    <h5 class="card-title">Administración y Mantenimiento</h5>
-                                    <p class="card-text">Gestionamos la administración y mantenimiento de propiedades residenciales y comerciales, ofreciendo servicios preventivos y correctivos.</p>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#modalReparacion">Más Información</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonio padding-xl">
-            <div class="container">
-                <h2>Testimonios</h2>
                 <div class="row">
-                    <div class="col">
-                        <img class="img-fluid" src="assets/img/Test_1.jpg" alt="Cliente satisfecho 1">
-                        <h3>Familia Gonzales</h3>
-                        <p>"El equipo superó nuestras expectativas. ¡Nuestra casa es un sueño hecho realidad! Totalmente
-                            recomendados."</p>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/img/Servicio-1.png" alt="Servicio inmobiliario" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Servicios Inmobiliarios</h5>
+                                <p class="card-text">Ofrecemos asesoría integral en servicios inmobiliarios,
+                                    incluyendo compra, venta, alquiler y gestión de propiedades para satisfacer tus
+                                    necesidades residenciales o comerciales.</p>
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#modalCasaMultisegura">Más Información</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <img class="img-fluid" src="assets/img/Test_2.jpg" alt="Cliente satisfecho 2">
-                        <h3>Carlos Valdivia</h3>
-                        <p>"Profesionalismo y atención al detalle de principio a fin. El proceso fue transparente y sin
-                            contratiempos."</p>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/img/Servicio-2.jpg" alt="Construcción, diseño y remodelación"
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Construcción, Diseño y Remodelación</h5>
+                                <p class="card-text">Brindamos servicios completos de construcción,
+                                    diseño arquitectónico personalizado y remodelación integral para transformar tu
+                                    espacio en el hogar ideal.</p>
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#modalCasaInteligente">Más Información</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <img class="img-fluid" src="assets/img/Test_3.jpg" alt="Cliente satisfecho 3">
-                        <h3>Ana Mendoza</h3>
-                        <p>"La calidad de los materiales y la construcción es excelente. Se nota la experiencia y el
-                            compromiso."</p>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/img/Servicio-3.jpg" alt="Inspección y control de calidad de vivienda"
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Inspección y Calidad de la Vivienda</h5>
+                                <p class="card-text">Realizamos inspecciones de viviendas y garantizamos la calidad
+                                    en cada proyecto, asegurando estándares, cumplimiento normativo y durabilidad.
+                                </p>
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#modalPlaneacion">Más Información</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/img/Servicio-4.jpg" alt="Administración y mantenimiento de propiedades"
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Administración y Mantenimiento</h5>
+                                <p class="card-text">Gestionamos la administración y mantenimiento de propiedades
+                                    residenciales y comerciales, ofreciendo servicios preventivos y correctivos.</p>
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#modalReparacion">Más Información</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="equipo padding-xl">
+        <section class="testimonio py-5 bg-dark text-white text-center">
+            <div class="container">
+                <!-- Título principal con margen inferior -->
+                <h2 class="display-4 mb-5 fw-bold text-uppercase">Testimonios</h2>
+
+                <div class="row g-4">
+                    <!-- Testimonio 1 -->
+                    <div class="col-md-4">
+                        <div class="p-3">
+                            <img class="rounded-3 mb-3 border border-3 border-primary testimonio-img" src="assets/img/Test_1.jpg"
+                                alt="Familia Gonzales">
+                            <h3 class="h4 fw-bold">Familia Gonzales</h3>
+                            <p class="fst-italic opacity-75 small">
+                                "El equipo superó nuestras expectativas. ¡Nuestra casa es un sueño hecho realidad!
+                                Totalmente recomendados."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 2 -->
+                    <div class="col-md-4">
+                        <div class="p-3">
+                            <img class="rounded-3 mb-3 border border-3 border-primary testimonio-img" src="assets/img/Test_2.jpg"
+                                alt="Carlos Valdivia">
+                            <h3 class="h4 fw-bold">Carlos Valdivia</h3>
+                            <p class="fst-italic opacity-75 small">
+                                "Profesionalismo y atención al detalle de principio a fin. El proceso fue transparente y
+                                sin contratiempos."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 3 -->
+                    <div class="col-md-4">
+                        <div class="p-3">
+                            <img class="rounded-3 mb-3 border border-3 border-primary testimonio-img" src="assets/img/Test_3.jpg"
+                                alt="Ana Mendoza">
+                            <h3 class="h4 fw-bold">Ana Mendoza</h3>
+                            <p class="fst-italic opacity-75 small">
+                                "La calidad de los materiales y la construcción es excelente. Se nota la experiencia y
+                                el compromiso."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipo py-5">
             <div class="container">
                 <h2>Nuestro equipo</h2>
                 <div class="container my-5">
@@ -249,7 +281,7 @@
             </div>
         </section>
 
-        <section class="youtube-section padding-xl">
+        <section class="youtube-section py-5">
             <div class="container">
                 <h2>Video de demostración</h2>
                 <iframe class="youtube-video" src="https://www.youtube.com/embed/DWlIYoHM8JU"
@@ -259,7 +291,11 @@
             </div>
         </section>
 
-        <section class="contact-section padding-xl">
+        <section class="contact-section py-5">
+            <div class="about text-center mb-4">
+                <h1>¿Quieres contactarnos?</h1>
+                <p>Dejanos tus datos para poder contactarte</p>
+            </div>
             <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="modalContactoLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-lg">
@@ -309,16 +345,18 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-modal" data-bs-toggle="modal" data-bs-target="#modalContacto">
-                Abrir Formulario de Contacto
-            </button>
+            <div class="text-center">
+                <button type="button" class="btn btn-modal" data-bs-toggle="modal" data-bs-target="#modalContacto">
+                    Abrir Formulario de Contacto
+                </button>
+            </div>
         </section>
     </main>
 
     <div class="modal fade" id="modalCotizacion" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            L <div class="modal-content">
-                <div class="modal-header bg-principal text-white">
+            <div class="modal-content">
+                <div class="modal-header text-white modal-header-custom">
                     <h5 class="modal-title" id="modalLabel">Solicitar Cotización</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                         aria-label="Close"></button>
@@ -351,7 +389,9 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Ofrecemos asesoría integral en servicios inmobiliarios, incluyendo compra, venta, alquiler y gestión de propiedades para satisfacer tus necesidades residenciales o comerciales con profesionalismo y transparencia.</p>
+                    <p>Ofrecemos asesoría integral en servicios inmobiliarios, incluyendo compra, venta, alquiler y
+                        gestión de propiedades para satisfacer tus necesidades residenciales o comerciales con
+                        profesionalismo y transparencia.</p>
                     <ul>
                         <li>Asesoría en compra y venta de propiedades</li>
                         <li>Gestión de alquileres y arrendamientos</li>
@@ -360,10 +400,11 @@
                     </ul>
                 </div>
                 <div class="modal-body">
-                    <img src="assets/img/Servicio-Modal-1.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/Servicio-Modal-1.jpg" alt="Asesoría inmobiliaria" class="img-fluid">
                 </div>
                 <div class="container mt-3" style="border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
-                    <div class="row" style="background-color: var(--color-principal); color: var(--color-texto-claro); font-weight: bold; padding: 10px 0;">
+                    <div class="row"
+                        style="background-color: var(--color-principal); color: var(--color-texto-claro); font-weight: bold; padding: 10px 0;">
                         <div class="col-6 border-end text-center">Servicio</div>
                         <div class="col-6 text-center">Precio</div>
                     </div>
@@ -397,7 +438,9 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Brindamos servicios completos de construcción desde cero, diseño arquitectónico personalizado y remodelación integral para transformar tu espacio en el hogar ideal, con atención a cada detalle y uso de materiales de calidad.</p>
+                    <p>Brindamos servicios completos de construcción desde cero, diseño arquitectónico personalizado y
+                        remodelación integral para transformar tu espacio en el hogar ideal, con atención a cada detalle
+                        y uso de materiales de calidad.</p>
                     <ul>
                         <li>Construcción de viviendas nuevas</li>
                         <li>Diseño arquitectónico innovador</li>
@@ -406,10 +449,11 @@
                     </ul>
                 </div>
                 <div class="modal-body">
-                    <img src="assets/img/Servicio-Modal-2.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/Servicio-Modal-2.jpg" alt="Diseño arquitectónico" class="img-fluid">
                 </div>
                 <div class="container mt-3" style="border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
-                    <div class="row" style="background-color: var(--color-principal); color: var(--color-texto-claro); font-weight: bold; padding: 10px 0;">
+                    <div class="row"
+                        style="background-color: var(--color-principal); color: var(--color-texto-claro); font-weight: bold; padding: 10px 0;">
                         <div class="col-6 border-end text-center">Servicio</div>
                         <div class="col-6 text-center">Precio</div>
                     </div>
@@ -443,7 +487,9 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Realizamos inspecciones exhaustivas de viviendas y garantizamos la calidad en cada proyecto, asegurando estándares superiores, cumplimiento normativo y durabilidad a largo plazo para tu tranquilidad.</p>
+                    <p>Realizamos inspecciones exhaustivas de viviendas y garantizamos la calidad en cada proyecto,
+                        asegurando estándares superiores, cumplimiento normativo y durabilidad a largo plazo para tu
+                        tranquilidad.</p>
                     <ul>
                         <li>Inspecciones estructurales y de seguridad</li>
                         <li>Evaluación de calidad de materiales</li>
@@ -452,10 +498,11 @@
                     </ul>
                 </div>
                 <div class="modal-body">
-                    <img src="assets/img/Servicio-Modal-3.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/Servicio-Modal-3.jpg" alt="Inspección de calidad" class="img-fluid">
                 </div>
                 <div class="container mt-3" style="border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
-                    <div class="row" style="background-color: var(--color-principal); color: var(--color-texto-claro); font-weight: bold; padding: 10px 0;">
+                    <div class="row"
+                        style="background-color: var(--color-principal); color: var(--color-texto-claro); font-weight: bold; padding: 10px 0;">
                         <div class="col-6 border-end text-center">Servicio</div>
                         <div class="col-6 text-center">Precio</div>
                     </div>
@@ -489,7 +536,9 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Gestionamos la administración y mantenimiento de propiedades residenciales y comerciales, ofreciendo servicios preventivos, correctivos y de mejora continua para mantener tu inversión en óptimas condiciones y prolongar su vida útil.</p>
+                    <p>Gestionamos la administración y mantenimiento de propiedades residenciales y comerciales,
+                        ofreciendo servicios preventivos, correctivos y de mejora continua para mantener tu inversión en
+                        óptimas condiciones y prolongar su vida útil.</p>
                     <ul>
                         <li>Mantenimiento preventivo y correctivo</li>
                         <li>Administración de propiedades</li>
@@ -498,10 +547,11 @@
                     </ul>
                 </div>
                 <div class="modal-footer">
-                    <img src="assets/img/Servicio-Modal-4.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/Servicio-Modal-4.jpg" alt="Mantenimiento de propiedades" class="img-fluid">
                 </div>
                 <div class="container mt-3" style="border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
-                    <div class="row" style="background-color: var(--color-principal); color: var(--color-texto-claro); font-weight: bold; padding: 10px 0;">
+                    <div class="row"
+                        style="background-color: var(--color-principal); color: var(--color-texto-claro); font-weight: bold; padding: 10px 0;">
                         <div class="col-6 border-end text-center">Servicio</div>
                         <div class="col-6 text-center">Precio</div>
                     </div>
@@ -525,7 +575,7 @@
         </div>
     </div>
 
-    <footer class="footer padding-sm">
+    <footer class="footer py-3">
         <div class="container">
             <span>&copy; 2026 Constructora de las Casas - Todos los derechos reservados</span>
         </div>
@@ -535,10 +585,10 @@
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <script src="assets/scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="assets/scripts/main.js"></script>
 </body>
 
 </html>
